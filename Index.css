@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kaushan+Script&family=Poppins:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kaushan+Script&family=Poppins:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kaushan+Script&family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kaushan+Script&family=Poppins:wght@800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kaushan+Script&family=Mochiy+Pop+P+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kaushan+Script&family=Mochiy+Pop+P+One&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -12,25 +12,31 @@
   --font-size: 1.1em;
   -padding: 3.1rem;
   --display: flex;
-  --width:90vw;
+  --width: 90vw;
   --font-weight: bold;
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
 }
 .nav-link {
   display: var(--display);
-  align-items: center;
-  margin-left: 8rem;
+  justify-content: space-evenly;
+  margin-left: 0rem;
   font-family: var(--font-family);
   font-weight: var(--font-weight);
 }
 .navbar-nav {
-  margin-left: 28rem;
+  text-align: center;
+  margin-left: 24rem;
 }
+
 .button .btn {
   width: 8rem;
 }
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .nav-link:hover {
-  background-color: aqua;
   color: black;
   border-radius: 12px;
   transition: all 2s;
@@ -39,117 +45,88 @@
 .text-formation {
   color: var(--color);
   font-size: var(--font-size);
-  display: inline-block;
+  display: inline-flex;
   line-height: 1.7px;
   letter-spacing: 1.5px;
 }
 
-/* next sections */
+.img-section img {
+  width: 32rem;
+  display: flex;
+  margin-top: -25rem;
+  margin-left: 3rem;
+  position: relative;
+}
+.text-header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20% 10% 0px;
+  width: 35rem;
+  font-weight: var(--font-weight);
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.typed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-left: -6rem;
+  color: rgb(255, 145, 34);
+  font-weight: bolder;
+}
+
+.text-paragraph strong {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 8% 12% 0px;
+  width: 36rem;
+  font-size: var(--font-size);
+}
+.main-btn {
+  margin-left: 5rem;
+}
+
+.main-btn > .main-btn-1 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  padding: em;
+}
+
 .container-1 {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  /* grid-template-columns: repeat(2,1fr); */
+}
+
+.about-section{
+  text-align: center;
+}
+.container-2{
+  display: flex;
+  /* justify-self: center; */
+  justify-content: center;
+  width: 80%;
+}
+.container-7{
   display: grid;
-  grid-template-columns: repeat(2,60fr);
+  grid-template-columns: repeat(2,1fr);
+  gap: 3px;
+  flex-wrap: wrap;
 }
-/* box-1 */
-
-.box-1 {
-background-color: rgb(255, 235, 181);
-}
-.box-2{
-background-color: rgb(255, 235, 181);
-
-}
-.img-section img{
-    width: 32rem;
-    display: flex;
-    margin-top: -15rem;
-    margin-left: 33rem;
-    position: relative;
-}
-.animation-section{
-    position: absolute;
-    margin-top: -51rem;
-    margin-left: 55rem;
-    animation: animation-1 2s alternate-reverse infinite ;
-}
-.animation-section-1{
-    position: absolute;
-    margin-top: -25rem;
-    margin-left: 25rem;
-    animation: animation-2 2s alternate-reverse infinite ;
-}
-.animation-section-2{
-    position: absolute;
-    margin-top: -15rem;
-    margin-left: 5rem;
-    animation: animation-3 2s alternate-reverse infinite ;
-}
- 
-.animation-section-3{
-    position: absolute;
-    margin-top: -45rem;
-    margin-left: 5rem;
-    animation: animation-4 2s alternate-reverse infinite ;
-}
- 
-.animation-section-4{
-    position: absolute;
-    margin-top: -15rem;
-    margin-left: 5rem;
-    animation: animation-5 2s alternate-reverse infinite ;
-}
- 
-.animation-section-9{
-    position: absolute;
-    margin-top: -40rem;
-    margin-left: -25rem;
-    animation: animation-6 2s alternate-reverse infinite ;
+.container-7 .box-4 img{
+  width: 70%;
+  border-radius: 12px;
 }
 
-.animation-section-10{
-    position: absolute;
-    margin-top: 5rem;
-    transform: rotate(155deg);
-    margin-left: 25rem;
-    animation: animation-7 2s alternate-reverse infinite ;
+.footer{
+  background-color: black;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
 }
-
- .text-header{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 20% 10% 0px;
-    width: 35rem;
-    font-weight: var(--font-weight);
-    font-family: 'Mochiy Pop P One', sans-serif;
- }
- .typed{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:3rem;
-    margin-left: -6rem;
-    color: rgb(255, 145, 34);
-    font-weight: bolder;
- }
-
- .text-paragraph strong{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 8% 12% 0px;
-    width: 36rem;
-    font-size: var(--font-size);
- }
- .main-btn{
-    margin-left: 5rem;
- }
-
- .main-btn > .main-btn-1{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
-    padding: em;
- }
-
